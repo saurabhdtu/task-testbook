@@ -21,7 +21,7 @@ object ApiClient {
         okHttpClient.readTimeout(60, TimeUnit.SECONDS)
         okHttpClient.writeTimeout(60, TimeUnit.SECONDS)
         val mRetrofit: Retrofit = Retrofit.Builder()
-            .baseUrl("http://api.testbook.com/api/v1/")
+            .baseUrl("https://api.testbook.com/api/v1/")
             .addConverterFactory(GsonConverterFactory.create())
             .client(okHttpClient.build())
             .build()
